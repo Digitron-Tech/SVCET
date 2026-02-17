@@ -539,6 +539,103 @@
             line-height: 1.8;
             font-size: 1.05rem;
         }
+         /* Chief Guest Section */
+        .chief-guest-section {
+            width: 55%;
+            margin: 4rem auto;
+            padding: 4rem 2%;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(123, 44, 191, 0.15));
+            border: 2px solid var(--cyan);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 212, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .chief-guest-section:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 48px rgba(0, 212, 255, 0.4);
+            border-color: var(--primary);
+        }
+
+        .chief-guest-section h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            color: var(--cyan);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            width: 100%;
+        }
+        .guest-img {
+            width: 350px;
+            height: 550px;
+            object-fit:cover; /* Crops to fill the dimensions without distortion */
+            object-position: center;
+            margin: 0;     /* Remove any margin around the image */
+            padding: 0;    /* Remove any padding */
+    
+    
+        }
+
+        .guest-details {
+            text-align: center;
+            font-size:30px;
+    
+        }
+
+        .guest-name {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .guest-degree {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.3rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .guest-positions {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .guest-positions li {
+            color: #ddd;
+            font-size: 1.05rem;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+            position: relative;
+            padding-left: 1.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .guest-positions li:last-child {
+            border-bottom: none;
+        }
+
+        .guest-positions li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-size: 1rem;
+        }
+
+        .guest-positions li:hover {
+            color: var(--cyan);
+            transform: translateX(10px);
+        }
 
         /* Registration Section */
         .registration-section {
@@ -1296,5 +1393,6 @@
     </script>
 </body>
 </html>
+
 
 
